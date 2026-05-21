@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let temp_en_degres_C = 20
+        console.log("temp_en_degres_C : " + temp_en_degres_C)
+        document.write("temp_en_degres_C : " + temp_en_degres_C)
+    </script>
+    <br>
+    <script>
+        let temp_en_degres_F = temp_en_degres_C*9/5 + 32
+        console.log("temp_en_degres_F : " + temp_en_degres_F)
+        document.write("temp_en_degres_F : " + temp_en_degres_F)
+    </script>
+    <br>
+    <script>
+        let longueur = 3
+        let largeur = 2
+        let aire = longueur*largeur
+        console.log("aire du rectangle : " + aire)
+        document.write("aire du rectangle : " + aire)
+    </script>
+    <br>
+    <script>
+        let prenom = "Lucas"
+        let nom = "Dubois"
+        console.log("Nom et prénom : " + nom + " " + prenom)
+        document.write("Nom et prénom : " + nom + " " + prenom)
+    </script>
+    <br>
+    <script>
+        let montant_HT = 100
+        let taux_TVA = montant_HT*(20/100)
+        let montant_TTC = montant_HT + taux_TVA
+        console.log("montant de la valeur HT : " + montant_HT)
+        document.write("montant de la valeur HT : " + montant_HT)
+    </script>
+    <br>
+    <script>
+        console.log("montant de la TVA : " + taux_TVA)
+        document.write("montant de la TVA : " + taux_TVA)
+    </script>
+    <br>
+    <script>
+        console.log("montant TTC : " + montant_TTC)
+        document.write("montant TTC : " + montant_TTC)
+    </script>
+    <br>
+    <script>
+        let res = ((4 >= 6) || ("herbe" != "verte")) && !(((12 * 2) == 144) && true)
+        console.log(res)
+        document.write(res)
+    </script>
+    <br>
+    <script>
+        let poids = 70
+        let taille = 1.71
+        let IMC = poids/(taille*taille)
+        console.log("Votre IMC est : " + IMC.toFixed(2))
+        document.write("Votre IMC est : " + IMC.toFixed(2))
+    </script>
+    <br>
+    <script>
+        let montant_min = 50
+        let montant_tot = 70
+        if (montant_tot >= montant_min) {
+            console.log("Livraison gratuite !")
+            document.write("Livraison gratuite !")
+        } else {
+            console.log("Frais de livraison : 2.50 euros")
+            document.write("Frais de livraison : 2.50 euros")
+        }
+    </script>
+    <br>
+    <script>
+        let nb_bin = "11111111"
+        document.write(parseInt(nb_bin ,2))
+    </script>
+</body>
+</html>
