@@ -8,22 +8,21 @@
 </head>
 
 <body>
-    <p>Score</p>
-    Choisir :
-    <input type="radio" id="Pierre" name="case"/>
-    <label for="Pierre">Pierre</label>
-    <input type="radio" id="Feuille" name="case" />
-    <label for="Feuille">Feuille</label>
-    <input type="radio" id="Ciseaux" name="case" checked />
-    <label for="Ciseaux">Ciseaux</label>
+    <input type="radio" name="case" id="pierre"> Pierre
+    <input type="radio" name="case" id="Papier"> Papier
+    <input type="radio" name="case" id="Ciseaux"> Ciseaux
     <br>
-    <br>
-    <input type="submit" id="bouton" value="Jouer" />
+    <input type="submit" id="bouton">
+    <p id="paragraphe"></p>
     <script>
-        function jouer() {
-            bouton = document.getElementById("bouton")
-            bouton.addEventListener("click", jouer)
+        let compteur = 0;
+        function increment() {
+            compteur++;
+        p = document.getElementById("paragraphe");
+        p.innerText = "compteur=" + compteur;
         }
+        b = document.getElementById("bouton");
+        b.addEventListener("click", increment);
     </script>
 </body>
 
