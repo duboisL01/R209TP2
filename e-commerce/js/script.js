@@ -1,0 +1,25 @@
+// À vous de jouer !
+
+let t = [{ "title": "Nevermind", "artist": "Nirvana", "year": "1991", "cover_url": "https://img.lemde.fr/2021/08/25/0/0/2100/1400/664/0/75/0/6210db2_153692386-nevermindcover.jpg", "price": "11.00", "id": "0" }, { "title": "Master of Puppets", "artist": "Metallica", "year": "1986", "cover_url": "https://m.media-amazon.com/images/I/81j7xM-oijL.SL1400.jpg", "price": "8.99", "id": "1" }, { "title": "Origin of Symmetry", "artist": "Muse", "year": "2001", "cover_url": "https://upload.wikimedia.org/wikipedia/en/3/35/Muse_-_Origin_of_Symmetry_cover_art.png", "price": "14.20", "id": "2" }, { "title": "Disintegration", "artist": "The Cure", "year": "1989", "cover_url": "https://i.discogs.com/jJ5NVJVDmzMVcA-YUFcwGa2-OfdnJ3IQ7Oip27N_Sys/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk2MTA5/NzAtMTUyNzM1Nzgz/Mi01NjA1LmpwZWc.jpeg", "price": "15.00", "id": "3" }, { "title": "Showbiz", "artist": "Muse", "year": "1999", "cover_url": "https://i.discogs.com/uKGpjvcjsIwycUT_OjIVUIzJ5NKpX9oazgIzOSzwJ_Q/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzEz/ODAtMTYxNjA4ODk4/MC01MDQyLmpwZWc.jpeg", "price": "8.99", "id": "4" }, { "title": "The Resistance", "artist": "Muse", "year": "2009", "cover_url": "https://m.media-amazon.com/images/I/91ZwmJUvFDL._SL1500_.jpg", "price": "11.30", "id": "5" }, { "title": "Absolution", "artist": "Muse", "year": "2003", "cover_url": "https://www.nme.com/wp-content/uploads/2016/09/2013Muse_Absolution600G10413-1.jpg", "price": "13.99", "id": "6" }, { "title": "Black Holes and Revelations", "artist": "Muse", "year": "2006", "cover_url": "http://citizens-of-muse.fr/wp-content/uploads/2020/03/BHAR.jpg", "price": "11.80", "id": "7" }, { "title": "Amnesiac", "artist": "Radiohead", "year": "2001", "cover_url": "http://www.albumrock.net/dyn_img/pochettes_album/268_150.jpg", "price": "13.40", "id": "8" }, { "title": "OK Computer", "artist": "Radiohead", "year": "1997", "cover_url": "http://static.rawckus.com/wp-content/uploads/2016/06/radiohead2.jpg", "price": "10.20", "id": "9" }, { "title": "Unplugged in New-York", "artist": "Nirvana", "year": "1994", "cover_url": "https://m.media-amazon.com/images/I/81vS+wfdozL._SL1400_.jpg", "price": "8.64", "id": "10" }, { "title": "In Utero", "artist": "Nirvana", "year": "1993", "cover_url": "https://m.media-amazon.com/images/I/71eLqPemDvS._SL1500_.jpg", "price": "16.25", "id": "11" }, { "title": "Bleach", "artist": "Nirvana", "year": "1989", "cover_url": "https://m.media-amazon.com/images/I/71ThvtmT-FL._SL1417_.jpg", "price": "11.57", "id": "12" }, { "title": "Incesticide", "artist": "Nirvana", "year": "1992", "cover_url": "https://m.media-amazon.com/images/I/81N6OZTI7zL._SL1400_.jpg", "price": "14.99", "id": "13" }, { "title": "Pablo Honey", "artist": "Radiohead", "year": "1993", "cover_url": "https://25yearslatersite.com/wp-content/uploads/2020/01/Radiohead_Pablohoney-700x695.jpg", "price": "13.89", "id": "14" }, { "title": "The Bends", "artist": "Radiohead", "year": "1995", "cover_url": "https://m.media-amazon.com/images/I/71VJAU9IPSL._SL1200_.jpg", "price": "14.50", "id": "15" }, { "title": "Pornography", "artist": "The Cure", "year": "1982", "cover_url": "https://www.benzinemag.net/wp-content/uploads/2019/09/the-cure-pornography.jpg", "price": "11", "id": "16" }, { "title": "Mixed Up", "artist": "The Cure", "year": "1990", "cover_url": "https://m.media-amazon.com/images/I/81i7S0BEhvL._SL1425_.jpg", "price": "12.87", "id": "17" }, { "title": "Violator", "artist": "Depeche Mode", "year": "1990", "cover_url": "https://m.media-amazon.com/images/I/61P+1Z23hWL._SL1500_.jpg", "price": "12", "id": "18" }, { "title": "Exciter", "artist": "Depeche Mode", "year": "2001", "cover_url": "https://m.media-amazon.com/images/I/61M9S4a0RnS._SL1200_.jpg", "price": "16.33", "id": "19" }, { "title": "Playing the Angel", "artist": "Depeche Mode", "year": "2005", "cover_url": "https://m.media-amazon.com/images/I/81Vbrv+RQUL._SL1412_.jpg", "price": "14.50", "id": "20" }];
+
+for(i=0;i<t.length;i++)
+{
+    let sec=document.getElementById("items");
+    let a=document.createElement("a");
+    a.href="./product.html?id="+i;
+    sec.appendChild(a);
+    a.innerHTML="<article> <img src=" + t[i].cover_url +" alt=" + t[i].title +">"+ "<h3 class=\"productName\"> " + t[i]['artist'] + "</h3>" + "<p class=\"productDescription\">11.00 €</p> </article>";
+}
+
+
+   /*       <a href="./product.html?id=0">
+            <article>
+                <img src="https://img.lemde.fr/2021/08/25/0/0/2100/1400/664/0/75/0/6210db2_153692386-nevermindcover.jpg" alt="Nevermind">
+                <h3 class="productName">Nevermind - Nirvana</h3>
+                <p class="productDescription">11.00 €</p>
+            </article>
+        </a>
+ <h3 class="productName">Nevermind - Nirvana</h3>
+                <p class="productDescription">11.00 €</p>
+
+        */
